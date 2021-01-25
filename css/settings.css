@@ -1,0 +1,11 @@
+body {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 13.5px;
+    background-color: #fff;
+    overflow-x: hidden;
+    color: #626262;
+}
+
+a {
+    text-decoration: none;
+}
