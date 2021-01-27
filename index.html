@@ -27,7 +27,9 @@
 
         </header>
 
-        <div class="wrapper">
+        <div class="wrapper swiper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>        
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -47,14 +49,10 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. lor lorem</p>
                         <a href="#">show more</a>
                     </div>
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>                
-
-               
+                </div>  
             </div>
-
             <div class="swiper-pagination"></div>
+
         </div>
     </div>
 
@@ -62,22 +60,90 @@
         <div class="wrapper">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
             <div class="container-boxslide">
-                <div class="slide_our_project">
-                    <img src="./media/our-team/WhatWeAre@1x.jpg" alt="">
+
+                <div class="slide-our-project">
+                    <div class="boxslide-icon-white-border">
+                        <div class="boxslide-icon">
+                            <img 
+                                srcset="./media/our-team/camera@2x.png 2x, 
+                                        ./media/our-team/camera@3x.png 3x"
+                                src="./media/our-team/camera@1x.png" 
+                                alt="Иконка камеры">
+                        </div>
+                    </div>
+                    <div class="img-slide-our-project">
+                        <picture class="slide-our-project-img">
+                            <source srcset="./media/our-team/swing@1x.webp 1x,
+                                            ./media/our-team/swing@2x.webp 2x,
+                                            ./media/our-team/swing@3x.webp 3x"
+                                    type="image/webp">
+                          
+                            <img srcset="./media/our-team/swing@2x.jpg 2x, 
+                                         ./media/our-team/swing@3x.jpg 3x"
+                                 src="./media/our-team/swing@1x.jpg"
+                                 alt="Качеля" />  
+                        </picture>                    
+                    </div>
                     <div class="box-text-decor">
                         <h3>What We Are</h3>
                         <p>Lorem Ipsum is simply dummy text the printing and typesetting.</p>
                     </div>
                 </div>
-                <div class="slide_our_project">
-                    <img src="./media/our-team/OurTeam@1x.jpg" alt="">
+
+                <div class="slide-our-project">
+                    <div class="boxslide-icon-white-border">
+                        <div class="boxslide-icon">
+                            <img 
+                                srcset="./media/our-team/pencil@2x.png 2x,
+                                        ./media/our-team/pencil@3x.png 3x"
+                                src="./media/our-team/pencil@1x.png" 
+                                alt="Иконка карандаша" 
+                                class="pencil">
+                        </div>
+                    </div>
+                    <div class="img-slide-our-project"> 
+                        <picture class="slide-our-project-img">
+                            <source srcset="./media/our-team/bike@1x.webp 1x,
+                                            ./media/our-team/bike@2x.webp 2x,
+                                            ./media/our-team/bike@3x.webp 3x"
+                                    type="image/webp">
+                          
+                            <img srcset="./media/our-team/bike@2x.jpg 2x,
+                                         ./media/our-team/bike@3x.jpg 3x"
+                                 src="./media/our-team/bike@1x.jpg" 
+                                 alt="Велосипед">
+                        </picture>    
+                    </div>
                     <div class="box-text-decor">
                         <h3>Start Our Project</h3>
                         <p>Lorem Ipsum is simply dummy text the printing and typesetting.</p>
                     </div>
                 </div>
-                <div class="slide_our_project">
-                    <img src="./media/our-team/StartOurProject@1x.jpg" alt="">
+
+                <div class="slide-our-project">
+                    <div class="boxslide-icon-white-border">
+                        <div class="boxslide-icon">
+                            <img
+                                srcset="./media/our-team/stoller@2x.png 2x,
+                                        ./media/our-team/stoller@3x.png 3x"
+                                src="./media/our-team/stoller@1x.png" 
+                                alt="Иконка тележки" 
+                                class="stoller">
+                        </div>
+                    </div>
+                    <div class="img-slide-our-project"> 
+                        <picture class="slide-our-project-img">
+                            <source srcset="./media/our-team/grass@1x.webp 1x,
+                                            ./media/our-team/grass@2x.webp 2x,
+                                            ./media/our-team/grass@3x.webp 3x"
+                                    type="image/webp">
+                          
+                                <img srcset="./media/our-team/grass@2x.jpg 2x,
+                                    ./media/our-team/grass@3x.jpg 3x"
+                                 src="./media/our-team/grass@1x.jpg" 
+                                 alt="Трава">
+                        </picture>    
+                    </div>
                     <div class="box-text-decor">
                         <h3>Our Team</h3>
                         <p>Lorem Ipsum is simply dummy text the printing and typesetting.</p>
@@ -90,12 +156,26 @@
     <div class="our-features">
         <div class="wrapper">
             <div class="block-logo">
-                <img src="./media/our-features/block-icon@1x.png" alt="">
+                <img
+                srcset="./media/our-features/block-icon@2x.png 2x,
+                        ./media/our-features/block-icon@3x.png 3x"
+                src="./media/our-features/block-icon@1x.png"
+                alt="Иконка галочки">
                 <h3>Our <span>features</span></h3>
             </div>
 
             <div class="our-features-content">
-                <img src="./media/our-features/phone-tablet@1x.jpg" alt="">
+                <picture >
+                    <source srcset="./media/our-features/phone-tablet@1x.webp 1x,
+                                    ./media/our-features/phone-tablet@2x.webp 2x,
+                                    ./media/our-features/phone-tablet@3x.webp 3x"
+                            type="image/webp">
+                  
+                    <img 
+                        srcset="./media/our-features/phone-tablet@2x.jpg 2x,
+                        ./media/our-features/phone-tablet@3x.jpg 3x"
+                        src="./media/our-features/phone-tablet@1x.jpg"     alt="Планщет и телефон">
+                </picture>    
                 <div class="our-features-text">
                     <h4>Lorem Ipsum is simply !!</h4>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators.</p>
@@ -114,7 +194,18 @@
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, </p>
                     <a href="" class="buttom">READ MORE</a>
                 </div>
-                <img src="./media/flat-camera/camera@1x.jpg" alt="">
+                <picture >
+                    <source srcset="./media/flat-camera/camera@1x.webp 1x,
+                                    ./media/flat-camera/camera@2x.webp 2x,
+                                    ./media/flat-camera/camera@3x.webp 3x"
+                            type="image/webp">
+                 
+                    <img 
+                        srcset="./media/flat-camera/camera@2x.jpg 2x,
+                                ./media/flat-camera/camera@3x.jpg 3x"
+                        src="./media/flat-camera/camera@1x.jpg" 
+                        alt="">
+                </picture>    
             </div>
         </div>
     </div>
@@ -122,7 +213,11 @@
     <div class="latest-projects">
         <div class="wrapper">
             <div class="block-logo">
-                <img src="./media/latest-projects/block-icon@1x.png" alt="">
+                <img
+                    srcset="./media/latest-projects/block-icon@2x.png 2x,
+                            ./media/latest-projects/block-icon@3x.png 3x"
+                    src="./media/latest-projects/block-icon@1x.png"
+                    alt="Иконка кубка">
                 <h3>our latest <span>projects</span> </h3>
                 <p>Lorem Ipsum is simply dummy text the printing and typesetting.</p>
             </div>
@@ -130,10 +225,25 @@
             <div class="latest-projects-content">
                 <div class="latest-projects-block">
                     <div class="latest-projects-img">
-                        <img src="./media/latest-projects/sea@1x.jpg" alt="" class="img-latest-projects">
-                        <div class="magnifier">
-                            <img src="./media/latest-projects/magnifier-icon@1x.png" alt="">
-                        </div>                        
+                        <picture class="img-latest-projects">
+                            <source srcset="./media/latest-projects/sea@1x.webp 1x,
+                                            ./media/latest-projects/sea@2x.webp 2x,
+                                            ./media/latest-projects/sea@3x.webp 3x"
+                                    type="image/webp">
+                         
+                            <img 
+                                srcset="./media/latest-projects/sea@2x.jpg 2x,
+                                        ./media/latest-projects/sea@3x.jpg 3x"
+                                src="./media/latest-projects/sea@1x.jpg" 
+                                alt="Беседка у моря">
+                        </picture>  
+                        <button class="magnifier">
+                            <img
+                            srcset="./media/latest-projects/magnifier-icon@2x.png 2x,
+                                    ./media/latest-projects/magnifier-icon@3x.png 3x"
+                            src="./media/latest-projects/magnifier-icon@1x.png"
+                            alt="Иконка лупы">
+                        </button>                        
                     </div>
                     <div class="latest-projects-text">
                         <h4>Lorem Ipsum</h4>
@@ -143,10 +253,25 @@
 
                 <div class="latest-projects-block">
                     <div class="latest-projects-img">
-                        <img src="./media/latest-projects/mountains@1x.jpg" alt="" class="img-latest-projects">
-                        <div class="magnifier">
-                            <img src="./media/latest-projects/magnifier-icon@1x.png" alt="">
-                        </div>
+                        <picture class="img-latest-projects">
+                            <source srcset="./media/latest-projects/mountains@1x.webp 1x,
+                                            ./media/latest-projects/mountains@2x.webp 2x,
+                                            ./media/latest-projects/mountains@3x.webp 3x"
+                                    type="image/webp">
+                         
+                            <img 
+                                srcset="./media/latest-projects/mountains@2x.jpg 2x,
+                                        ./media/latest-projects/mountains@3x.jpg 3x"
+                                src="./media/latest-projects/mountains@1x.jpg" 
+                                alt="Горы">
+                        </picture>  
+                        <button class="magnifier">
+                            <img
+                            srcset="./media/latest-projects/magnifier-icon@2x.png 2x,
+                                    ./media/latest-projects/magnifier-icon@3x.png 3x"
+                            src="./media/latest-projects/magnifier-icon@1x.png"
+                            alt="Иконка лупы">
+                        </dutton>
                     </div>
                     <div class="latest-projects-text">
                         <h4>Bonorum et Malorum</h4>
@@ -156,10 +281,25 @@
 
                 <div class="latest-projects-block">
                     <div class="latest-projects-img">
-                        <img src="./media/latest-projects/grapes@1x.jpg" alt="" class="img-latest-projects">
-                        <div class="magnifier">
-                            <img src="./media/latest-projects/magnifier-icon@1x.png" alt="">
-                        </div>
+                        <picture class="img-latest-projects">
+                            <source srcset="./media/latest-projects/grapes@1x.webp 1x,
+                                            ./media/latest-projects/grapes@2x.webp 2x,
+                                            ./media/latest-projects/grapes@3x.webp 3x"
+                                    type="image/webp">
+                         
+                            <img 
+                                srcset="./media/latest-projects/grapes@2x.jpg 2x,
+                                        ./media/latest-projects/grapes@3x.jpg 3x"
+                                src="./media/latest-projects/grapes@1x.jpg" 
+                                alt="Виноград">
+                        </picture>  
+                        <button class="magnifier">
+                            <img
+                            srcset="./media/latest-projects/magnifier-icon@2x.png 2x,
+                                    ./media/latest-projects/magnifier-icon@3x.png 3x"
+                            src="./media/latest-projects/magnifier-icon@1x.png"
+                            alt="Иконка лупы">
+                        </button>
                     </div>
                     <div class="latest-projects-text">
                         <h4>Injected humour</h4>
@@ -169,10 +309,25 @@
 
                 <div class="latest-projects-block">
                     <div class="latest-projects-img">
-                        <img src="./media/latest-projects/forest@1x.jpg" alt="" class="img-latest-projects">
-                        <div class="magnifier">
-                            <img src="./media/latest-projects/magnifier-icon@1x.png" alt="">
-                        </div>
+                        <picture class="img-latest-projects">
+                            <source srcset="./media/latest-projects/forest@1x.webp 1x,
+                                            ./media/latest-projects/forest@2x.webp 2x,
+                                            ./media/latest-projects/forest@3x.webp 3x"
+                                    type="image/webp">
+                         
+                            <img 
+                                srcset="./media/latest-projects/forest@2x.jpg 2x,
+                                        ./media/latest-projects/forest@3x.jpg 3x"
+                                src="./media/latest-projects/forest@1x.jpg" 
+                                alt="Лес">
+                        </picture>  
+                        <button class="magnifier">
+                            <img
+                            srcset="./media/latest-projects/magnifier-icon@2x.png 2x,
+                                    ./media/latest-projects/magnifier-icon@3x.png 3x"
+                            src="./media/latest-projects/magnifier-icon@1x.png"
+                            alt="Иконка лупы">
+                        </button>
                     </div>
                     <div class="latest-projects-text">
                         <h4>Embarrassing</h4>
@@ -186,7 +341,11 @@
     <div class="testimonials">
         <div class="wrapper">
             <div class="block-logo">
-                <img src="./media/testimonials/block-icon@1x.png" alt="">
+                <img
+                srcset="./media/testimonials/block-icon@2x.png 2x,
+                        ./media/testimonials/block-icon@3x.png 3x"
+                src="./media/testimonials/block-icon@1x.png"
+                alt="Иконка сообщения">
                 <h3>client <span>Testimonials</span></h3>
             </div>
 
@@ -194,27 +353,136 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
-                        <img src="/media/testimonials/shape@1x.png" alt="">
+                        <img
+                        srcset="./media/testimonials/shape@2x.png 2x,
+                                ./media/testimonials/shape@3x.png 3x"
+                        src="./media/testimonials/shape@1x.png"
+                        alt="Горизонтальная линия">
                         <p class="avtor"><span>Robart Markel</span>, Company Name</p>
                     </div>
 
                     <div class="swiper-slide">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia rem eum laudantium quod temporibus voluptatem maxime ex? Quae quia quasi voluptatem reiciendis? Suscipit doloribus quam labore rem explicabo quis!</p>
-                        <img src="/media/testimonials/shape@1x.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia rem eum laudantium quod temporibus voluptatem maxime ex? Quae quia quasi voluptatem reiciendis?</p>
+                        <img
+                        srcset="./media/testimonials/shape@2x.png 2x,
+                                ./media/testimonials/shape@3x.png 3x"
+                        src="./media/testimonials/shape@1x.png"
+                        alt="Горизонтальная линия">
                         <p class="avtor"><span>Lorem.</span>, Company Name</p>
                     </div>
 
                     <div class="swiper-slide">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum possimus, ratione voluptate beatae ducimus eveniet earum odio laudantium velit. Quia alias sint praesentium error sunt cum. Nemo omnis explicabo officia!Laudantium, excepturi. Maxime iste sed alias tempore! Commodi fugit eligendi quo dicta nemo voluptatem esse sint rerum laboriosam quos repellendus enim perspiciatis ex nisi ad labore minus possimus, voluptates consectetur.</p>
-                        <img src="/media/testimonials/shape@1x.png" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum possimus, ratione voluptate beatae ducimus eveniet earum odio laudantium velit. </p>
+                        <img
+                        srcset="./media/testimonials/shape@2x.png 2x,
+                                ./media/testimonials/shape@3x.png 3x"
+                        src="./media/testimonials/shape@1x.png"
+                        alt="Горизонтальная линия">
                         <p><span>Lorem.</span>, Company Name</p>
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination1"></div>
+            <div class="swiper-pagination"></div>
         </div>
+    </div>
 
-        </div>
+    <div class="footer">
+        <footer>
+            <div class="footer-section1">
+                <div class="wrapper">
+                    <div class="footer-block">
+                        <h5 class="footer-logo">Webworld</h5>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of</p>
+                    </div>
+                    <div class="footer-block contact">
+                        <h5>Contact</h5>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suf-</p>
+                        <div class="footer-block-contact adress">   
+                            <img
+                            srcset="./media/footer/adress@2x.png 2x,
+                                    ./media/footer/adress@3x.png 3x"
+                            src="./media/footer/adress@1x.png"
+                            alt="Иконка маркера адресса">
+                            <a class="adress">New Delhi</a>
+                        </div>
+                        <div class="footer-block-contact email">
+                            <img
+                            srcset="./media/footer/email@2x.png 2x,
+                                    ./media/footer/email@3x.png 3x"
+                            src="./media/footer/email@1x.png"
+                            alt="Иконка конверта">
+                            <a class="email">info@yourwebsite.com</a>
+                        </div>
+                        <div class="footer-block-contact telephone">
+                            <img
+                            srcset="./media/footer/telephone@2x.png 2x,
+                                    ./media/footer/telephone@3x.png 3x"
+                            src="./media/footer/telephone@1x.png"
+                            alt="Иконка телефона">
+                            <a class="telephone">890-09880-45590</a>
+                        </div>
+                    </div>
+                    <div class="footer-block">
+                        <h5>Latest tweets</h5>
+                        <div class="footer-block-tweets">
+                            <img
+                            srcset="./media/footer/twitter-blue@2x.png 2x,
+                                    ./media/footer/twitter-blue@3x.png 3x"
+                            src="./media/footer/twitter-blue@1x.png"
+                            alt="Иконка логотипа твиттера">
+                            <div class="tweets-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
+                                <p class="time">1 Hour Ago</p>
+                            </div>
+                        </div>
+                        <div class="footer-block-tweets">
+                            <img
+                            srcset="./media/footer/twitter-blue@2x.png 2x,
+                                    ./media/footer/twitter-blue@3x.png 3x"
+                            src="./media/footer/twitter-blue@1x.png"
+                            alt="Иконка логотипа твиттера">
+                            <div class="tweets-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typeset-</p>
+                                <p class="time">1 Hour Ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-block">
+                        <h5>News letter</h5>
+                        <p>Type your email address below and recive our daily news letter for free</p>
+                        <!-- Тут должна быть форма -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section2">
+                <div class="wrapper">
+                    <p>© 2013 All rights reserved.  Theme by cssauthor.com</p>
+                    <div class="social-logo">
+                        <button>
+                            <img
+                            srcset="./media/footer/twitter@2x.png 2x,
+                                    ./media/footer/twitter@3x.png 3x"
+                            src="./media/footer/twitter@1x.png"
+                            alt="Иконка логотипа твиттера"> 
+                        </button>  
+                        <button>
+                        <img
+                            srcset="./media/footer/facebook@2x.png 2x,
+                                    ./media/footer/facebook@3x.png 3x"
+                            src="./media/footer/facebook@1x.png"
+                            alt="Иконка логотипа фейсбука">  
+                        </button> 
+                        <button>
+                        <img
+                            srcset="./media/footer/linkedIn@2x.png 2x,
+                                    ./media/footer/linkedIn@3x.png 3x"
+                            src="./media/footer/linkedIn@1x.png"
+                            alt="Иконка логотипа линкедина">   
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="./swiper/swiper-bundle.min.js"></script>
