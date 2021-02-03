@@ -525,6 +525,9 @@ header{
 .footer-block {
     &:last-child{
         width: 201px;
+        p {
+            padding-right: 0;
+        }
     }
     h5 {
         margin-top: 72px;
@@ -551,6 +554,9 @@ header{
         margin: 0;
         letter-spacing: .3px;
         cursor: pointer;
+        &:hover {
+            color:  #71b6d5;
+        }
     }
     .footer-block-contact {
         display: flex;
@@ -572,7 +578,37 @@ header{
             margin-right: 16px;
         }
     }
+    .footer-block-news {
+        display: flex;
+        width: 100%;
+        margin-top: 18px;
+        input[type=text] {
+            width: 157px;
+            height: 35px;
+            background-color: #172227;
+            border: solid 1px #172227;
+            border-radius: 5px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            color: #a7a7a7;
+            padding-left: 10px;
+        }
+        input[type=submit] {
+            background-color: #71b6d5;
+            border: solid 1px #71b6d5;
+            border-radius: 5px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            color: #fff;
+            &:hover {
+                color:  #71b6d5;
+                background-color: #fff;
+            }
+        }
+    }
 }
+
+
 
 .contact p {
     margin-bottom: 22px;

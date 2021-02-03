@@ -374,7 +374,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .intro {
@@ -870,6 +870,9 @@ header .intro-nav {
 .footer-block:last-child {
   width: 201px;
 }
+.footer-block:last-child p {
+  padding-right: 0;
+}
 .footer-block h5 {
   margin-top: 72px;
   margin-bottom: 20px;
@@ -896,6 +899,9 @@ header .intro-nav {
   letter-spacing: 0.3px;
   cursor: pointer;
 }
+.footer-block a:hover {
+  color: #71b6d5;
+}
 .footer-block .footer-block-contact {
   display: flex;
   margin-bottom: 13px;
@@ -915,6 +921,34 @@ header .intro-nav {
   height: 16px;
   margin-top: 5px;
   margin-right: 16px;
+}
+.footer-block .footer-block-news {
+  display: flex;
+  width: 100%;
+  margin-top: 18px;
+}
+.footer-block .footer-block-news input[type=text] {
+  width: 157px;
+  height: 35px;
+  background-color: #172227;
+  border: solid 1px #172227;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #a7a7a7;
+  padding-left: 10px;
+}
+.footer-block .footer-block-news input[type=submit] {
+  background-color: #71b6d5;
+  border: solid 1px #71b6d5;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: #fff;
+}
+.footer-block .footer-block-news input[type=submit]:hover {
+  color: #71b6d5;
+  background-color: #fff;
 }
 
 .contact p {
