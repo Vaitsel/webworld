@@ -396,7 +396,6 @@ a {
 
 header {
   padding-top: 30px;
-  margin-bottom: 104px;
 }
 header .wrapper {
   display: flex;
@@ -446,6 +445,7 @@ header .intro-nav {
 
 .swiper {
   position: relative;
+  padding-top: 144px;
 }
 
 .intro .swiper-slide {
@@ -456,7 +456,7 @@ header .intro-nav {
   font-size: 48px;
   color: #fff;
   letter-spacing: 1.1px;
-  margin-bottom: 0;
+  margin: 0 0;
 }
 .intro .swiper-slide p {
   font-size: 25px;
@@ -485,6 +485,10 @@ header .intro-nav {
   content: none;
 }
 
+.intro .swiper-button-prev:focus, .intro .swiper-button-next:focus {
+  outline: none;
+}
+
 .intro .swiper-button-prev, .intro .swiper-button-next {
   background-position: center center;
   background-repeat: no-repeat;
@@ -496,14 +500,14 @@ header .intro-nav {
 
 .intro .swiper-button-prev {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: -50px;
   background-image: url("../media/arrow-left@1x.png");
 }
 
 .intro .swiper-button-next {
   position: absolute;
-  top: 30%;
+  top: 50%;
   right: -50px;
   background-image: url("../media/arrow-right@1x.png");
 }
