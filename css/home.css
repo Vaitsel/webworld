@@ -439,7 +439,7 @@ header .intro-nav {
 .intro-line {
   background-color: #7c7c7c;
   height: 1px;
-  width: 1024px;
+  width: 100%;
 }
 
 .swiper {
@@ -559,7 +559,7 @@ header .intro-nav {
   flex-direction: column;
   text-align: center;
   position: relative;
-  width: 320px;
+  width: 31.25%;
 }
 .slide-our-project .boxslide-icon {
   position: absolute;
@@ -609,7 +609,7 @@ header .intro-nav {
 .img-slide-our-project {
   overflow: hidden;
   height: 128px;
-  width: 320px;
+  width: 100%;
 }
 .img-slide-our-project img {
   border: solid 1px #e1e1e1;
@@ -627,6 +627,9 @@ header .intro-nav {
   color: #484848;
   margin-top: 20px;
   margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .slide-our-project p {
   margin: 0 40px;
@@ -797,12 +800,13 @@ header .intro-nav {
 }
 
 .latest-projects-img {
+  width: 100%;
   height: 237px;
   background-color: #000;
   position: relative;
   overflow: hidden;
 }
-.latest-projects-img .img-latest-projects {
+.latest-projects-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1035,6 +1039,74 @@ header .intro-nav {
 .footer-section2 .linkedin:hover {
   background-color: #0e76a8;
   border-color: #0e76a8;
+}
+
+@media (max-width: 1024px) {
+  .latest-projects-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .latest-projects-block {
+    width: 42%;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container-boxslide {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container-boxslide .slide-our-project {
+    width: 88%;
+    margin-bottom: 70px;
+  }
+  .container-boxslide .slide-our-project .img-slide-our-project {
+    height: 60%;
+  }
+
+  .our-features-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .flat-camera-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .flat-camera-content .flat-camera-text {
+    order: 2;
+  }
+
+  .flat-camera-text p {
+    margin-right: 0;
+  }
+
+  .footer-section1 .wrapper {
+    flex-wrap: wrap;
+  }
+  .footer-section1 .footer-block {
+    width: 45%;
+  }
+}
+@media (max-width: 576px) {
+  .latest-projects-block {
+    width: 88%;
+  }
+
+  .footer-section1 .wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-section1 .footer-block {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

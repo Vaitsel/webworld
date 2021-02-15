@@ -65,7 +65,7 @@ header{
 .intro-line {
     background-color: #7c7c7c;
     height: 1px;
-    width: 1024px;
+    width: 100%;
 }
 
 // swiper slider in header
@@ -191,7 +191,7 @@ header{
     flex-direction: column;
     text-align: center;
     position: relative;
-    width: 320px;
+    width: 31.25%;
 
     .boxslide-icon {
         position: absolute;
@@ -243,9 +243,9 @@ header{
 .img-slide-our-project {
     overflow: hidden;
     height: 128px;
-    width: 320px;
+    width: 100%;
     img {
-            border: solid 1px #e1e1e1;
+    border: solid 1px #e1e1e1;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     object-fit: cover;
@@ -262,6 +262,9 @@ header{
         color: #484848;
         margin-top: 20px;
         margin-bottom: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     p {
         margin: 0 40px;
@@ -446,11 +449,12 @@ header{
 }
 
 .latest-projects-img {
+    width: 100%;
     height: 237px;
     background-color: #000;
     position: relative;
     overflow: hidden;
-    .img-latest-projects {
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -696,3 +700,127 @@ header{
     }
 }
 
+@media (max-width:1024px){
+    .latest-projects-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .latest-projects-block {
+        width: 42%;
+        padding: 0 20px;
+    }
+
+}
+
+@media (max-width:768px){
+    // .intro-burger {
+    //     display: block;
+    //     position: relative;
+    //     width: 30px;
+    //     height: 20px;
+    //     span {
+    //         position: absolute;
+    //         left: 0;
+    //         background-color: #fff;
+    //         width: 100%;
+    //         height: 2px;
+    //         top: 9px;
+
+    //     }
+    //     &::after, &::before{
+    //         content: "";
+    //         background-color: #fff;
+    //         position: absolute;
+    //         width: 100%;
+    //         height: 2px;
+    //         left: 0;
+    //     }
+    //     &::before{
+    //         top: 0;
+    //     }
+    //     &::after {
+    //         bottom: 0;
+    //     }
+    // }
+
+    // .logo-nav {
+    //     display: block;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 150px;
+    //     padding-top: 80px;
+    //     padding-left: 80%;
+    //     ul {
+    //         display: block;
+    //         li {
+    //             margin-bottom: 20px;
+    //         }
+    //     }
+    // }
+
+    .container-boxslide {
+        flex-wrap: wrap;
+        justify-content: center;
+        .slide-our-project {
+            width: 88%;
+            margin-bottom: 70px;
+            .img-slide-our-project {
+                height: 60%;
+            }
+        }
+    }
+
+    .our-features-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flat-camera-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .flat-camera-text {
+            order: 2;
+        }
+    }
+
+    .flat-camera-text p{
+        margin-right: 0;
+    }
+
+    .footer-section1 {
+        .wrapper {
+            flex-wrap: wrap;
+        }
+        .footer-block {
+            width: 45%;
+        }
+    } 
+    
+
+}
+
+@media (max-width:576px){
+    .latest-projects-block {
+        width: 88%;
+    }
+
+    .footer-section1 {
+        .wrapper {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-block {
+            width: 80%;
+        }
+    } 
+}

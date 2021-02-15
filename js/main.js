@@ -1,3 +1,4 @@
+
 var mySwiper = new Swiper('.intro .swiper-container', {
     navigation: {
         nextEl: '.swiper-button-next',
@@ -18,3 +19,9 @@ var mySwiper = new Swiper('.testimonials .swiper-container', {
     },
 
 });
+
+// $('.intro-burger').on('click', function(e) {
+//   e.preventDefault();
+//   $('.intro-burger').toggleClass("active");
+//   $('.logo-nav').toggleClass("active");
+// });
