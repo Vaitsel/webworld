@@ -9,7 +9,6 @@
     background-position: center center;
     background-size: cover;
     padding-bottom: 100px;
-    margin-bottom: 32px;
 }
 
 header{
@@ -55,7 +54,14 @@ header{
 // aside portfolio
 
 .content-portfolio{
-    margin-bottom: 45px;
+    .row {
+        padding-top: 32px;
+    }
+    section {
+        .row {
+            padding-top: 0;
+        }       
+    }
 }
 
 aside {
@@ -149,10 +155,10 @@ aside {
     }
     .aside-title {
         &::after {
-            width: 80px;
+            width: 30%;
         }
         &::before {
-            width: 80px;
+            width: 30%;
         }
     }
 }
@@ -168,10 +174,10 @@ aside {
     }
     .aside-title {
         &::after {
-            width: 60px;
+            width: 20%;
         }
         &::before {
-            width: 60px;
+            width: 20%;
         }
     }
 }
@@ -182,10 +188,10 @@ aside {
     }
     .aside-title {
         &::after {
-            width: 57px;
+            width: 18%;
         }
         &::before {
-            width: 57px;
+            width: 18%;
         }
     }   
 }
@@ -193,10 +199,10 @@ aside {
     margin-bottom: 20px;
     .aside-title {
         &::after {
-            width: 67px;
+            width: 24%;
         }
         &::before {
-            width: 67px;
+            width: 24%;
         }
     }
 }
@@ -204,8 +210,7 @@ aside {
 // portfolio cards
 
 section {
-    margin-left: 28px;
-    
+    margin-left: 28px;   
 }
 
 .cards {
@@ -231,15 +236,25 @@ section {
         margin-bottom: 0;
         font-size: 18px;
         color: #484848;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     p{
         margin-top: 0;
         font-size: 13px;
         color: #b2b2b2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
 // footer
+
+footer {
+    padding-top: 45px;
+}
 
 .footer-section1 {
     background-color: #273a43;
@@ -282,24 +297,26 @@ section {
     .footer-block-contact {
         display: flex;
         margin-bottom: 13px;
-        img {
+        svg {
             width: 20px;
             height: 19px;
             margin-right: 22px;
+            fill: #71b6d5;
         }
     }
     .footer-block-tweets {
         display: flex;
         align-items: flex-start;
         margin-bottom: 33px;
-        img {
+        svg {
             width: 18px;
             height: 16px;
             margin-top: 5px;
-            margin-right: 16px;
+            fill: #71b6d5;
         }
-        p {
-            padding-right: 0;
+        .tweets-text {
+            margin-left: 16px;
+            width: 210px;
         }
     }
     .footer-block-news {
@@ -316,6 +333,9 @@ section {
             border-bottom-right-radius: 0;
             color: #a7a7a7;
             padding-left: 10px;
+            &:focus {
+                outline: none;
+            }
         }
         input[type=submit] {
             background-color: #71b6d5;
@@ -327,6 +347,9 @@ section {
             &:hover {
                 color:  #71b6d5;
                 background-color: #fff;
+            }
+            &:focus {
+                outline: none;
             }
         }
     }
@@ -358,7 +381,8 @@ section {
     .row{
         height: 90px;
     }
-    button {
+    a {
+        display: inline-block;
         width: 28px;
         height: 28px;
         border: solid 1px #2c3b42;
@@ -366,17 +390,64 @@ section {
         background-color: #2c3b42;
         position: relative;
         cursor: pointer;
-        margin-left: 6px;
-        &:hover {
-            background-color: #71b6d5;
-            border-color: #71b6d5;
-        }
+        margin-right: 5px;
     }
-    img {
+    svg {
+        width: 16px;
+        height: 16px;
+        fill: #fff;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .twitter:hover{
+        background-color: #00acee;
+        border-color: #00acee;
+    }
+    .facebook:hover{
+        background-color: #3b5998;
+        border-color: #3b5998;
+    }
+    .linkedin:hover{
+        background-color: #0e76a8;
+        border-color: #0e76a8;
+    }
 
+}
+
+
+
+@media (max-width:992px){
+    .footer-block .footer-news{
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width:576px){
+    .content-portfolio{
+        section {
+            margin-left: 0;
+            .row {
+                &:first-child {
+                    padding: 32px 0 0 0;
+                }
+                padding-top: 0;
+            }
+        }
+        .row {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    .footer-section1 {
+        .row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
