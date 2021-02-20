@@ -1055,6 +1055,75 @@ header .intro-nav {
   }
 }
 @media (max-width: 768px) {
+  .intro-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .intro-burger:focus {
+    outline: none;
+  }
+  .intro-burger span {
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+  .intro-burger::after, .intro-burger::before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .intro-burger::before {
+    top: 0;
+  }
+  .intro-burger::after {
+    bottom: 0;
+  }
+
+  .logo-nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    height: 150px;
+    width: 100%;
+  }
+  .logo-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+  }
+  .logo-nav ul li {
+    margin: 0 0 20px 0;
+  }
+
+  .swiper {
+    margin-top: 100px;
+    padding-top: 0;
+  }
+
+  .swiper-burger {
+    margin-top: 150px;
+  }
+
+  .show {
+    display: blocK;
+  }
+
   .container-boxslide {
     flex-wrap: wrap;
     justify-content: center;
@@ -1136,9 +1205,20 @@ header .intro-nav {
   .footer-section1 .footer-block {
     width: 80%;
   }
+  .footer-section1 .footer-block h5 {
+    margin-top: 25px;
+  }
+  .footer-section1 .footer-block .footer-block-tweets:last-child {
+    margin-bottom: 5px;
+  }
 
   .footer-section2 .social-logo {
     width: 180px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer-section2 .social-logo a {
+    margin-right: 6px;
   }
 }
 

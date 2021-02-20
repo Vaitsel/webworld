@@ -20,8 +20,13 @@ var mySwiper = new Swiper('.testimonials .swiper-container', {
 
 });
 
-// $('.intro-burger').on('click', function(e) {
-//   e.preventDefault();
-//   $('.intro-burger').toggleClass("active");
-//   $('.logo-nav').toggleClass("active");
-// });
+let btn_burger = document.querySelector('.intro-burger');
+let nav_burger = document.querySelector('.logo-nav');
+let swiper_burger = document.querySelector('.intro .swiper');
+
+btn_burger.addEventListener('click', function(){
+  this.classList.toggle('active');
+  nav_burger.classList.toggle('show');
+  swiper_burger.classList.toggle('swiper-burger');
+});
+
