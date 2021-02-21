@@ -415,7 +415,7 @@ header .row {
   top: 55px;
   background-color: #7c7c7c;
   height: 1px;
-  width: 1024px;
+  width: 100%;
   align-content: center;
 }
 
@@ -495,6 +495,9 @@ aside .tags:hover {
   background-color: #71b6d5;
   color: #fff;
 }
+aside .tags:focus {
+  outline: none;
+}
 
 .aside-search input {
   width: 100%;
@@ -502,6 +505,9 @@ aside .tags:hover {
   border: solid 1px #e1e1e1;
   border-radius: 5px;
   margin-bottom: 30px;
+}
+.aside-search input:focus {
+  outline: none;
 }
 .aside-search .aside-title::after {
   width: 30%;

@@ -405,6 +405,72 @@ header {
 }
 
 @media (max-width:768px){
+    .intro-burger {
+        grid-column: 4/5;
+        justify-self: end;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        padding: 0;
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+        span {
+            position: absolute;
+            left: 0;
+            background-color: #fff;
+            width: 100%;
+            height: 2px;
+            top: 9px;
+
+        }
+        &::after, &::before{
+            content: "";
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+        }
+        &::before{
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+    }
+
+    .logo-nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        height: 150px;
+        ul {    
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 0;
+            li {
+                margin: 0 0 20px 0;
+            }
+        }
+    }
+
+    .show {
+        display: blocK;
+    }
+
+    .title-show {
+        margin-top: 80px;
+    }
+    
     .container-block {
         display: grid;
         grid-template-rows: 1fr 1fr;
