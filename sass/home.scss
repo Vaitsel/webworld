@@ -16,6 +16,7 @@
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+    // overflow-x: hidden;
 }
 
 header{
@@ -742,7 +743,7 @@ header{
             width: 100%;
             height: 2px;
             top: 9px;
-
+            transition: .6s;
         }
         &::after, &::before{
             content: "";
@@ -751,6 +752,7 @@ header{
             width: 100%;
             height: 2px;
             left: 0;
+            transition: .6s;
         }
         &::before{
             top: 0;
@@ -760,13 +762,26 @@ header{
         }
     }
 
+    .intro-burger.active::before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .intro-burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .intro-burger.active span{
+        transform: scale(0);
+    }
+
     .logo-nav {
-        display: none;
         position: absolute;
-        top: 80px;
+        top: -1000px;
         right: 20px;
-        height: 150px;
         width: 100%;
+        transition: .6s;
         ul {    
             display: flex;
             flex-direction: column;
@@ -778,6 +793,10 @@ header{
         }
     }
 
+    .show {
+        top: 80px;
+    }
+
     .swiper {
         margin-top: 100px;
         padding-top: 0;
@@ -785,10 +804,6 @@ header{
 
     .swiper-burger {
         margin-top: 150px;
-    }
-
-    .show {
-        display: blocK;
     }
 
     .container-boxslide {
