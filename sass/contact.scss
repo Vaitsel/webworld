@@ -28,7 +28,7 @@ header {
     grid-column: 1/4;    
     .wrapper {
         display: grid;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: repeat(4, auto);
         grid-template-columns: 1fr;
     }
     .intro-line {
@@ -56,7 +56,7 @@ header {
 .intro-nav {
     grid-row: 1/2;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     .logo {
         grid-column: 1/2;
         font-family: "pacifico-regular", sans-serif;
@@ -154,7 +154,7 @@ header {
 .container-block {
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .block-info {
@@ -212,8 +212,8 @@ header {
 
 .contact-form {
     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4, 1fr);
     .form-name, .form-email, .form-message {
         border: 1px solid #e2e2e2;
         border-radius: 5px;
@@ -270,7 +270,7 @@ header {
     .wrapper {
         grid-column: 2/3;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -513,8 +513,8 @@ header {
     
     .container-block {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         .info-svg {
             margin-top: 10px;
         }
@@ -535,8 +535,8 @@ header {
 
     .footer-section1 {
         .wrapper {
-            grid-template-rows: auto auto;
-            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(2, auto);
+            grid-template-columns: repeat(2, 1fr);
         }
         h5 {
             margin-top: 40px;
@@ -547,7 +547,7 @@ header {
 @media (max-width:576px){
     .footer-section1 {
         .wrapper {
-            grid-template-rows: auto auto auto auto;
+            grid-template-rows: repeat(4, auto);
             grid-template-columns: 1fr;
         }
     }
@@ -558,6 +558,15 @@ header {
         }
         .form-email {
             width: 80%;
+        }
+    }
+
+    .footer-block {
+        h5 {
+            margin-top: 25px;
+        }
+        .footer-block-tweets:last-child {
+            margin-bottom: 5px;
         }
     }
 }

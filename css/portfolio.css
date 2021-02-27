@@ -779,6 +779,13 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
+  .footer-block h5 {
+    margin-top: 25px;
+  }
+  .footer-block .footer-block-tweets:last-child {
+    margin-bottom: 5px;
+  }
 }
 
 /*# sourceMappingURL=portfolio.css.map */
