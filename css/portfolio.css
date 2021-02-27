@@ -505,6 +505,7 @@ aside .tags:focus {
   border: solid 1px #e1e1e1;
   border-radius: 5px;
   margin-bottom: 30px;
+  padding-left: 10px;
 }
 .aside-search input:focus {
   outline: none;
